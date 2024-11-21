@@ -1,0 +1,76 @@
+/* Общие стили */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  background: url('images/hero_banner.jpg') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+header button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  background: #007BFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  background: #333;
+  margin: 0;
+  padding: 10px;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+
+section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#services-list, #gallery-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.service-item, .gallery img {
+  width: 200px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.service-item:hover, .gallery img:hover {
+  transform: scale(1.1);
+}
+
+ol {
+  text-align: left;
+  margin: 0 auto;
+  max-width: 600px;
+}
